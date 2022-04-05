@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Приложение "Пинк"</title>
+  <base href="https://htmlacademy-adaptive.github.io/2022605-pink-25/2/">
+</head>
+
+<body class="page__body">
+  <header class="main-header">
+    <a class="main-header__logo">
+      <svg class="main-header__logo-image" width="74" height="23" viewBox="0 0 74 23" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M0.00496827 1.54857C0.00487772 1.21254 0.135804 0.889818 0.369742 0.649431C0.60368 0.409043 0.922049 0.27008 1.25676 0.262266H8.39001C13.4469 0.262266 16.7751 2.9645 16.7751 7.39179V7.45162C16.7751 12.2977 12.7415 14.8105 7.97274 14.8105H2.53836V21.611C2.55394 21.7874 2.53277 21.9651 2.47619 22.1329C2.41961 22.3006 2.32887 22.4547 2.20973 22.5854C2.09058 22.716 1.94565 22.8204 1.78416 22.8918C1.62266 22.9631 1.44812 23 1.27166 23C1.0952 23 0.920671 22.9631 0.759173 22.8918C0.597674 22.8204 0.452744 22.716 0.333602 22.5854C0.21446 22.4547 0.123708 22.3006 0.0671295 22.1329C0.0105515 21.9651 -0.0106138 21.7874 0.00496827 21.611V1.54857ZM8.07209 12.5171C11.7778 12.5171 14.2119 10.5228 14.2119 7.53139V7.47156C14.2119 4.26078 11.8175 2.59556 8.25092 2.59556H2.58804V12.4772L8.07209 12.5171Z"
+          fill="white" />
+        <path
+          d="M21.5935 1.38904C21.5779 1.21262 21.5991 1.03487 21.6556 0.867114C21.7122 0.699353 21.803 0.545245 21.9221 0.414596C22.0412 0.283947 22.1862 0.179616 22.3477 0.108238C22.5092 0.0368607 22.6837 0 22.8602 0C23.0366 0 23.2112 0.0368607 23.3727 0.108238C23.5342 0.179616 23.6791 0.283947 23.7982 0.414596C23.9174 0.545245 24.0081 0.699353 24.0647 0.867114C24.1213 1.03487 24.1425 1.21262 24.1269 1.38904V21.611C24.1425 21.7874 24.1213 21.9651 24.0647 22.1329C24.0081 22.3006 23.9174 22.4548 23.7982 22.5854C23.6791 22.7161 23.5342 22.8204 23.3727 22.8918C23.2112 22.9631 23.0366 23 22.8602 23C22.6837 23 22.5092 22.9631 22.3477 22.8918C22.1862 22.8204 22.0412 22.7161 21.9221 22.5854C21.803 22.4548 21.7122 22.3006 21.6556 22.1329C21.5991 21.9651 21.5779 21.7874 21.5935 21.611V1.38904Z"
+          fill="white" />
+        <path
+          d="M30.674 1.41895C30.6816 1.08908 30.8163 0.775007 31.0497 0.542621C31.2831 0.310235 31.597 0.177597 31.9258 0.172531H32.2735C32.5316 0.177833 32.7843 0.248188 33.0082 0.377127C33.2322 0.506065 33.4202 0.689448 33.5551 0.910412L47.1559 18.3104V1.35912C47.1559 1.0312 47.2857 0.7167 47.5168 0.484821C47.7478 0.252942 48.0611 0.122673 48.3879 0.122673C48.7146 0.122673 49.0279 0.252942 49.259 0.484821C49.49 0.7167 49.6198 1.0312 49.6198 1.35912V21.6508C49.6252 21.8051 49.5993 21.9589 49.5435 22.1028C49.4878 22.2467 49.4034 22.3777 49.2956 22.4878C49.1877 22.5979 49.0587 22.6848 48.9163 22.7432C48.7739 22.8016 48.6211 22.8303 48.4673 22.8275H48.3382C48.0744 22.8092 47.8184 22.7294 47.5908 22.5944C47.3631 22.4593 47.17 22.2728 47.0268 22.0497L33.1179 4.24085V21.6508C33.1158 21.9722 32.991 22.2805 32.7692 22.5124C32.5474 22.7442 32.2456 22.882 31.9258 22.8973C31.6008 22.892 31.291 22.7581 31.064 22.5246C30.8369 22.2911 30.711 21.9771 30.7137 21.6508V1.41895H30.674Z"
+          fill="white" />
+        <path
+          d="M55.9384 1.38904C55.9228 1.21262 55.944 1.03487 56.0005 0.867114C56.0571 0.699353 56.1479 0.545245 56.267 0.414596C56.3862 0.283947 56.5311 0.179616 56.6926 0.108238C56.8541 0.0368607 57.0286 0 57.2051 0C57.3815 0 57.5561 0.0368607 57.7176 0.108238C57.8791 0.179616 58.024 0.283947 58.1431 0.414596C58.2623 0.545245 58.353 0.699353 58.4096 0.867114C58.4662 1.03487 58.4874 1.21262 58.4718 1.38904V13.6837L71.2282 0.551443C71.4899 0.279712 71.8455 0.119105 72.2216 0.10273C72.5468 0.115453 72.8548 0.252812 73.0821 0.486531C73.3094 0.72025 73.4388 1.03254 73.4436 1.35912C73.4366 1.52896 73.3961 1.69572 73.3245 1.84975C73.2529 2.00379 73.1516 2.14205 73.0264 2.25655L65.0785 10.1539L73.6523 20.6836C73.8764 20.9441 73.9998 21.2768 74 21.6209C73.9961 21.7933 73.9583 21.9633 73.8887 22.121C73.8191 22.2786 73.719 22.4209 73.5943 22.5395C73.4696 22.6582 73.3228 22.7509 73.1622 22.8123C73.0016 22.8737 72.8305 22.9026 72.6588 22.8973C72.4588 22.8891 72.2639 22.8322 72.0908 22.7314C71.9177 22.6306 71.7716 22.4891 71.6653 22.3189L63.3001 11.859L58.4718 16.7051V21.591C58.4718 21.7573 58.4391 21.922 58.3757 22.0756C58.3123 22.2293 58.2194 22.3689 58.1022 22.4865C57.9851 22.6041 57.846 22.6973 57.6929 22.761C57.5398 22.8246 57.3757 22.8574 57.21 22.8574C57.0443 22.8574 56.8803 22.8246 56.7272 22.761C56.5741 22.6973 56.435 22.6041 56.3179 22.4865C56.2007 22.3689 56.1078 22.2293 56.0443 22.0756C55.9809 21.922 55.9483 21.7573 55.9483 21.591V1.38904H55.9384Z"
+          fill="white" />
+      </svg>
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>"
+      <div class="main-nav__container">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a>
+              Главная
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="catalog.html">
+              Фотографии
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">
+              Конкурс
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="https://htmlacademy.ru/" target="_blank">
+              HTML Academy
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="main-container">
+    <h1 class="visually-hidden">Сайт приложения Пинк</h1>
+    <section class="main-banner">
+      <div class="main-banner__container">
+        <header class="main-banner__header">
+          <h2 class="main-banner__heading">Взгляните на жизнь
+            иначе!</h2>
+        </header>
+        <a class="main-banner__download-link" href="#" download>Скачать приложение</a>
+        <ul class="main-banner__os-logos-list os-logotypes-list">
+          <li class="os-logotypes__item">
+            <img class="os-logotypes__apple" src="../source/img/apple-logo.svg" width="47" height="56"
+              alt="Логотип Apple">
+          </li>
+          <li class="os-logotypes__item">
+            <img class="os-logotypes__android" src="../source/img/android-logo.svg" width="43" height="47"
+              alt="Логотип Android">
+          </li>
+          <li class="os-logotypes__item">
+            <img class="os-logotypes__microsoft" src="../source/img/microsoft-logo.svg" width="44" height="41"
+              alt="Логотип Microsoft">
+          </li>
+        </ul>
+        <p class="main-banner__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </div>
+    </section>
+
+    <section class="main-advantages">
+      <div class="main-advantages__container">
+        <h2 class="main-advantages__heading">Устали от серости мегаполиса? Нам есть, что вам предложить!</h2>
+        <ul class="main-advantages__list advantages-list">
+          <li class="advantages-list__item">
+            <span class="advantages-item__heading">Поднимает настроение</span>
+            <p class="advantages-item__description">Приложение позволит вам победить осеннюю хандру и депрессию
+              буквально в несколько кликов!</p>
+          </li>
+          <li class="advantages-list__item">
+            <span class="advantages-item__heading">Меняет мир вокруг</span>
+            <p class="advantages-item__description">Сделайте снимок и украсьте его смайликом или текстовой подписью,
+              чтобы усилить эффект</p>
+          </li>
+          <li class="advantages-list__item">
+            <span class="advantages-item__heading">Заводит новых друзей</span>
+            <p class="advantages-item__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и
+              заводите новых</p>
+          </li>
+        </ul>
+        <img class="advantages-iphone-hello" src="../source/img/iphone-image-hello.jpg" width="157" height="320"
+          alt="Iphone с приложением Пинк">
+      </div>
+    </section>
+
+    <section class="reviews">
+      <div class="reviews__wrapper slider">
+        <h2 class="visually-hidden">Отзывы о приложении</h2>
+        <div class="reviews__list slider__list">
+          <blockquote class="reviews__item slider__item">
+            <div class="reviews__author-info">
+              <cite class="reviews__author-name">Николай Петров</cite>
+              <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
+                серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            </div>
+          </blockquote>
+        </div>
+        <p class="reviews__toggles slider__toggles">
+          <button class="slider__toggle slider__toggle--current" type="button">1</button>
+          <button class="slider__toggle" type="button">2</button>
+          <button class="slider__toggle" type="button">3</button>
+        </p>
+      </div>
+    </section>
+
+    <section class="prices">
+      <div class="prices__wrapper slider">
+        <h2 class="visually-hidden">Таблица с ценами</h2>
+        <table class="prices__table slider-table" border="1">
+          <tr class="prices__table-row">
+            <td class="prices__table-item"></td>
+            <td class="prices__table-item">База 1,99 USD</td>
+            <td class="prices__table-item">Стандарт 3,99 USD</td>
+            <td class="prices__table-item">Анлим 9,99 USD</td>
+          </tr>
+          <tr class="prices__table-row">
+            <td class="prices__table-item">Розовый фильтр</td>
+            <td class="prices__table-item"></td>
+            <td class="prices__table-item"></td>
+            <td class="prices__table-item"></td>
+          </tr>
+          <tr class="prices__table-row">
+            <td class="prices__table-item">Смайлики</td>
+            <td class="prices__table-item"></td>
+            <td class="prices__table-item"></td>
+            <td class="prices__table-item"></td>
+          </tr>
+          <tr class="prices__table-row">
+            <td class="prices__table-item">Комментарии</td>
+            <td class="prices__table-item"></td>
+            <td class="prices__table-item"></td>
+            <td class="prices__table-item"></td>
+          </tr>
+        </table>
+      </div>
+    </section>
+
+    <section class="contacts">
+      <div class="contacts__wrapper">
+        <h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
+        <ul class="contacts__list contacts-list">
+          <li class="contacts__item">
+            <b class="contacts__heading">Звоните:</b>
+            <a class="contacts__description" href="tel:+78125556666">+7 (812) 555-66-66</a>
+          </li>
+          <li class="contacts__item">
+            <b class="contacts__heading">Пишите:</b>
+            <a class="contacts__description" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </li>
+          <li class="contacts__item">
+            <b class="contacts__heading">Приезжайте в гости:</b>
+            <p class="contacts__description">ул. Большая Конюшенная, 19/8</p>
+          </li>
+        </ul>
+        <div style="position:relative;overflow:hidden;"><a
+            href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps"
+            style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт‑Петербург</a><a
+            href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSEQPQFtjfXVyeXpgYQ==/?ll=30.325002%2C59.938478&mode=search&sctx=ZAAAAAgAEAAaKAoSCYnQCDauz0JAEabtX1lp4EtAEhIJAAAAAICN%2Fz8RAPBCLo4K5T8iBgABAgMEBSgKOABAAUgBYityZWFycj1zY2hlbWVfTG9jYWwvR2VvL0VuYWJsZUJlYXV0eUZpbHRlcj0xagJydZ0BzcxMPaABAKgBAL0BIoE22MIBAgAA6gEA8gEA%2BAEAggIv0YPQuy4g0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8sIDE5LziKAgCSAgCaAgxkZXNrdG9wLW1hcHM%3D&sll=30.323117%2C59.938635&sspn=0.014475%2C0.004112&text=%D1%83%D0%BB.%20%D0%91%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%D1%8F%20%D0%9A%D0%BE%D0%BD%D1%8E%D1%88%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F%2C%2019%2F8&utm_medium=mapframe&utm_source=maps&z=17.09"
+            style="color:#eee;font-size:12px;position:absolute;top:14px;">Большая Конюшенная улица, 19/8 —
+            Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCUBf6s9-B" width="560" height="400"
+            frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <div class="main-footer_wrapper">
+      <div class="main-footer__logo">
+        <img class="main-footer__logo-image" src="source/img/footer-logo.svg" width="145" height="40"
+          alt="Логотип приложения Пинк">
+      </div>
+      <div class="main-footer__social social">
+        <ul class="social-list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+              <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.1" fill-rule="evenodd" clip-rule="evenodd"
+                  d="M54 27C54 41.9117 41.9117 54 27 54C12.0883 54 0 41.9117 0 27C0 12.0883 12.0883 0 27 0C41.9117 0 54 12.0883 54 27ZM27 51C40.2548 51 51 40.2548 51 27C51 13.7452 40.2548 3 27 3C13.7452 3 3 13.7452 3 27C3 40.2548 13.7452 51 27 51Z"
+                  fill="#283645" />
+                <g clip-path="url(#clip0_35858_83)">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M35.5875 22.711C35.712 22.3015 35.5875 22 34.9913 22H33.0225C32.5215 22 32.2905 22.2603 32.1652 22.5475C32.1652 22.5475 31.164 24.9445 29.7458 26.5015C29.2867 26.953 29.0782 27.0963 28.8278 27.0963C28.7025 27.0963 28.5142 26.953 28.5142 26.5428V22.711C28.5142 22.219 28.3763 22 27.9593 22H24.8632C24.5505 22 24.3622 22.228 24.3622 22.4448C24.3622 22.9105 25.0718 23.0185 25.1445 24.3295V27.178C25.1445 27.8028 25.0297 27.916 24.7792 27.916C24.1117 27.916 22.488 25.5078 21.5243 22.7522C21.3375 22.216 21.1485 22 20.6452 22H18.675C18.1125 22 18 22.2603 18 22.5475C18 23.059 18.6675 25.6 21.1087 28.9608C22.7362 31.2558 25.0275 32.5 27.1147 32.5C28.3665 32.5 28.521 32.224 28.521 31.7478V30.013C28.521 29.4603 28.6395 29.35 29.0363 29.35C29.3287 29.35 29.829 29.494 30.9975 30.6003C32.3325 31.912 32.5523 32.5 33.3038 32.5H35.2725C35.835 32.5 36.117 32.224 35.955 31.678C35.7765 31.135 35.139 30.3468 34.2938 29.4115C33.8348 28.879 33.1463 28.3053 32.937 28.018C32.6453 27.6498 32.7285 27.4855 32.937 27.1578C32.937 27.1578 35.337 23.8383 35.5868 22.711H35.5875Z"
+                    fill="#D22856" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_35858_83">
+                    <rect width="18" height="18" fill="white" transform="translate(18 18)" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+          </li>
+
+          <li class="social__item">
+            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+              <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.1" fill-rule="evenodd" clip-rule="evenodd"
+                  d="M54 27C54 41.9117 41.9117 54 27 54C12.0883 54 0 41.9117 0 27C0 12.0883 12.0883 0 27 0C41.9117 0 54 12.0883 54 27ZM27 51C40.2548 51 51 40.2548 51 27C51 13.7452 40.2548 3 27 3C13.7452 3 3 13.7452 3 27C3 40.2548 13.7452 51 27 51Z"
+                  fill="#283645" />
+                <path
+                  d="M34.7034 21.202L32.3269 32.4099C32.1474 33.2007 31.68 33.3976 31.0157 33.0252L27.3943 30.3567L25.6472 32.0375C25.4537 32.231 25.2923 32.3924 24.9193 32.3924L25.1798 28.7047L31.8909 22.6404C32.1829 22.3805 31.8274 22.2359 31.4376 22.4964L23.1407 27.7209L19.5688 26.6026C18.792 26.3602 18.7779 25.8258 19.7308 25.4529L33.7016 20.0703C34.3485 19.8279 34.9144 20.2143 34.7034 21.2026V21.202Z"
+                  fill="#D22856" />
+              </svg>
+            </a>
+          </li>
+
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+              <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.1" fill-rule="evenodd" clip-rule="evenodd"
+                  d="M54 27C54 41.9117 41.9117 54 27 54C12.0883 54 0 41.9117 0 27C0 12.0883 12.0883 0 27 0C41.9117 0 54 12.0883 54 27ZM27 51C40.2548 51 51 40.2548 51 27C51 13.7452 40.2548 3 27 3C13.7452 3 3 13.7452 3 27C3 40.2548 13.7452 51 27 51Z"
+                  fill="#283645" />
+                <path
+                  d="M21.8336 33.8089C21.6463 33.9278 21.4247 33.9941 21.1963 33.9996C20.9678 34.0051 20.7426 33.9495 20.5487 33.8398C20.3548 33.7301 20.2007 33.571 20.1056 33.3824C20.0106 33.1938 19.9787 32.984 20.014 32.779V22.221C19.9787 22.016 20.0106 21.8062 20.1056 21.6176C20.2007 21.429 20.3548 21.2699 20.5487 21.1602C20.7426 21.0505 20.9678 20.9949 21.1963 21.0004C21.4247 21.0059 21.6463 21.0722 21.8336 21.1911L34.2333 26.6928C35.2556 27.1382 35.2556 27.8618 34.2333 28.3072L21.8336 33.8089Z"
+                  fill="#D22856" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="main-footer__copyright copyright">
+        <p class="copyright__text">Разработано:</p>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z"
+              fill="#D22856" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
