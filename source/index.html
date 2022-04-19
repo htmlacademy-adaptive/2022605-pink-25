@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Приложение "Пинк"</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
@@ -29,30 +30,27 @@
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <ul class="main-nav__list site-list">
         <li class="site-list__item site-list__item--active">
-          <a>
+          <a class="site-list__item-link">
             Главная
           </a>
         </li>
         <li class="site-list__item">
-          <a href="catalog.html">
+          <a class="site-list__item-link" href="catalog.html">
             Фотографии
           </a>
         </li>
         <li class="site-list__item">
-          <a href="competition.html">
+          <a class="site-list__item-link" href="competition.html">
             Конкурс
           </a>
         </li>
         <li class="site-list__item">
-          <a href="https://htmlacademy.ru/" target="_blank">
+          <a class="site-list__item-link" href="https://htmlacademy.ru/" target="_blank">
             HTML Academy
           </a>
         </li>
       </ul>
     </nav>
-  </header>
-  <main class="main-container">
-    <h1 class="visually-hidden">Сайт приложения Пинк</h1>
     <section class="main-banner">
       <div class="main-banner__container">
         <header class="main-banner__header">
@@ -62,25 +60,29 @@
         <a class="main-banner__download-link" href="#" download>Скачать приложение</a>
         <ul class="main-banner__os-logos-list os-logotypes-list">
           <li class="os-logotypes__item">
-            <img class="os-logotypes__apple" src="../source/img/apple-logo.svg" width="47" height="56"
+            <img class="os-logotypes__apple" src="./img/apple-logo.svg" width="47" height="56"
               alt="Логотип Apple">
           </li>
           <li class="os-logotypes__item">
-            <img class="os-logotypes__android" src="../source/img/android-logo.svg" width="43" height="47"
+            <img class="os-logotypes__android" src="./img/android-logo.svg" width="43" height="47"
               alt="Логотип Android">
           </li>
           <li class="os-logotypes__item">
-            <img class="os-logotypes__microsoft" src="../source/img/microsoft-logo.svg" width="44" height="41"
+            <img class="os-logotypes__microsoft" src="./img/microsoft-logo.svg" width="44" height="41"
               alt="Логотип Microsoft">
           </li>
         </ul>
         <p class="main-banner__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </div>
     </section>
+  </header>
+
+  <main class="main-container">
+    <h1 class="visually-hidden">Сайт приложения Пинк</h1>
 
     <section class="main-advantages">
       <div class="main-advantages__container">
-        <h2 class="main-advantages__heading">Устали от серости мегаполиса? Нам есть, что вам предложить!</h2>
+        <h2 class="main-advantages__heading">Устали от серости мегаполиса?<br>Нам есть, что вам предложить!</h2>
         <ul class="main-advantages__list advantages-list">
           <li class="advantages-list__item">
             <span class="advantages-item__heading">Поднимает настроение</span>
@@ -99,8 +101,8 @@
           </li>
         </ul>
         <div class="main-advantages__picture-container">
-          <img class="advantages-iphone-hello" src="../source/img/iphone-image-hello.jpg" width="157" height="320"
-          alt="Iphone с приложением Пинк">
+          <img class="advantages-iphone-hello" src="./img/iphone-image-hello.jpg" width="157" height="320"
+            alt="Iphone с приложением Пинк">
         </div>
       </div>
     </section>
@@ -131,56 +133,60 @@
         <table class="prices__table slider-table" border="1">
           <tr class="prices__table-row">
             <td class="prices__table-item"></td>
-            <td class="prices__table-item">База 1,99 USD</td>
-            <td class="prices__table-item">Стандарт 3,99 USD</td>
-            <td class="prices__table-item">Анлим 9,99 USD</td>
+            <td class="prices__table-item-column">База 1,99 USD</td>
+            <td class="prices__table-item-column">Стандарт 3,99 USD</td>
+            <td class="prices__table-item-column">Анлим 9,99 USD</td>
           </tr>
           <tr class="prices__table-row">
+            <td class="prices__table-item"></td>
+            <td class="prices__table-item"></td>
             <td class="prices__table-item">Розовый фильтр</td>
             <td class="prices__table-item"></td>
-            <td class="prices__table-item"></td>
-            <td class="prices__table-item"></td>
           </tr>
           <tr class="prices__table-row">
+            <td class="prices__table-item"></td>
+            <td class="prices__table-item"></td>
             <td class="prices__table-item">Смайлики</td>
             <td class="prices__table-item"></td>
-            <td class="prices__table-item"></td>
-            <td class="prices__table-item"></td>
           </tr>
           <tr class="prices__table-row">
+            <td class="prices__table-item"></td>
+            <td class="prices__table-item"></td>
             <td class="prices__table-item">Комментарии</td>
-            <td class="prices__table-item"></td>
-            <td class="prices__table-item"></td>
             <td class="prices__table-item"></td>
           </tr>
         </table>
+        <p class="reviews__toggles slider__toggles">
+          <button class="slider__toggle" type="button">1</button>
+          <button class="slider__toggle slider__toggle--current" type="button">2</button>
+          <button class="slider__toggle" type="button">3</button>
+        </p>
       </div>
     </section>
 
     <section class="contacts">
       <div class="contacts__wrapper">
         <h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
-        <ul class="contacts__list contacts-list">
-          <li class="contacts__item">
-            <b class="contacts__heading">Звоните:</b>
-            <a class="contacts__description" href="tel:+78125556666">+7 (812) 555-66-66</a>
-          </li>
-          <li class="contacts__item">
-            <b class="contacts__heading">Пишите:</b>
-            <a class="contacts__description" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-          </li>
-          <li class="contacts__item">
-            <b class="contacts__heading">Приезжайте в гости:</b>
-            <p class="contacts__description">ул. Большая Конюшенная, 19/8</p>
-          </li>
-        </ul>
-        <div style="position:relative;overflow:hidden;"><a
-            href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps"
-            style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт‑Петербург</a><a
-            href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSEQPQFtjfXVyeXpgYQ==/?ll=30.325002%2C59.938478&mode=search&sctx=ZAAAAAgAEAAaKAoSCYnQCDauz0JAEabtX1lp4EtAEhIJAAAAAICN%2Fz8RAPBCLo4K5T8iBgABAgMEBSgKOABAAUgBYityZWFycj1zY2hlbWVfTG9jYWwvR2VvL0VuYWJsZUJlYXV0eUZpbHRlcj0xagJydZ0BzcxMPaABAKgBAL0BIoE22MIBAgAA6gEA8gEA%2BAEAggIv0YPQuy4g0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8sIDE5LziKAgCSAgCaAgxkZXNrdG9wLW1hcHM%3D&sll=30.323117%2C59.938635&sspn=0.014475%2C0.004112&text=%D1%83%D0%BB.%20%D0%91%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%D1%8F%20%D0%9A%D0%BE%D0%BD%D1%8E%D1%88%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F%2C%2019%2F8&utm_medium=mapframe&utm_source=maps&z=17.09"
-            style="color:#eee;font-size:12px;position:absolute;top:14px;">Большая Конюшенная улица, 19/8 —
-            Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCUBf6s9-B" width="560" height="400"
-            frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+        <div class="contacts__item">
+          <b class="contacts__heading">Звоните:</b>
+          <a class="contacts__description" href="tel:+78125556666">+7 (812) 555-66-66</a>
+        </div>
+        <div class="contacts__item">
+          <b class="contacts__heading">Пишите:</b>
+          <a class="contacts__description" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        </div>
+        <div class="contacts__item">
+          <b class="contacts__heading">Приезжайте в гости:</b>
+          <p class="contacts__description">ул. Большая Конюшенная, 19/8</p>
+        </div>
+      </div>
+      <div style="position:relative;overflow:hidden;"><a
+          href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps"
+          style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт‑Петербург</a><a
+          href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSEQPQFtjfXVyeXpgYQ==/?ll=30.325002%2C59.938478&mode=search&sctx=ZAAAAAgAEAAaKAoSCYnQCDauz0JAEabtX1lp4EtAEhIJAAAAAICN%2Fz8RAPBCLo4K5T8iBgABAgMEBSgKOABAAUgBYityZWFycj1zY2hlbWVfTG9jYWwvR2VvL0VuYWJsZUJlYXV0eUZpbHRlcj0xagJydZ0BzcxMPaABAKgBAL0BIoE22MIBAgAA6gEA8gEA%2BAEAggIv0YPQuy4g0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8sIDE5LziKAgCSAgCaAgxkZXNrdG9wLW1hcHM%3D&sll=30.323117%2C59.938635&sspn=0.014475%2C0.004112&text=%D1%83%D0%BB.%20%D0%91%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%D1%8F%20%D0%9A%D0%BE%D0%BD%D1%8E%D1%88%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F%2C%2019%2F8&utm_medium=mapframe&utm_source=maps&z=17.09"
+          style="color:#eee;font-size:12px;position:absolute;top:14px;">Большая Конюшенная улица, 19/8 —
+          Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCUBf6s9-B" width="560" height="400"
+          frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
       </div>
     </section>
   </main>
