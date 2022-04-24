@@ -1,5 +1,5 @@
 .main-header {
-  background-image: url(../img/backgrund-banner-clear.jpg);
+  background-image: url("../img/backgrund-banner-clear.jpg");
   background-repeat: no-repeat;
   background-color: rgba(0, 0, 0, 0.3);
   margin-bottom: 54px;
@@ -8,7 +8,7 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
-  font-family: 'Open Sans';
+  font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -19,6 +19,12 @@
 .site-list__item-link {
   text-decoration: none;
   color: #ffffff;
+}
+.site-list__item-link:hover {
+  color: #d22856;
+}
+.site-list__item-link:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 .visually-hidden {
   position: absolute;
@@ -33,7 +39,7 @@
 .main-banner__heading {
   margin: 0;
   padding: 5px;
-  font-family: 'Open Sans';
+  font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 24px;
@@ -41,7 +47,7 @@
   color: #ffffff;
 }
 .main-heading {
-  font-family: 'Open Sans';
+  font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 24px;
@@ -56,28 +62,46 @@
 }
 .main-banner__description {
   margin: 0;
-  font-family: 'Open Sans';
+  font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
   line-height: 24px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .main-banner__download-link {
   text-decoration: none;
-  font-family: 'Open Sans';
+  font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 18px;
-  color: #FFFFFF;
-  border: 3px solid #FFFFFF;
+  color: #ffffff;
+  border: 3px solid #ffffff;
   box-sizing: border-box;
   border-radius: 29px;
+  padding: 21px 38px;
+}
+.main-banner__download-link:hover {
+  background-color: #ffffff;
+  color: #d22856;
+}
+.main-banner__download-link:active {
+  background-color: #ffffff;
+  color: rgba(210, 40, 86, 0.3);
+}
+.main-header__logo-image {
+  fill: #ffffff;
+}
+.main-header__logo-image:hover {
+  fill: #d22856;
+}
+.main-header__logo-image:active {
+  fill: rgba(255, 255, 255, 0.3);
 }
 .main-advantages__heading {
   margin: 0 0 123px 0;
-  font-family: 'Open Sans';
+  font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 24px;
@@ -91,18 +115,18 @@
 }
 .main-advantages {
   margin-bottom: 50px;
-  background-image: url(../img/grey-background.png);
+  background-image: url("../img/grey-background.png");
   background-repeat: no-repeat;
 }
 .advantages-item__heading {
-  font-family: 'Open Sans';
+  font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
 }
 .advantages-item__description {
-  font-family: 'Open Sans';
+  font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -110,14 +134,14 @@
   color: #283645;
 }
 .reviews__author-name {
-  font-family: 'Open Sans';
+  font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
 }
 .reviews__text {
-  font-family: 'Open Sans';
+  font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -128,7 +152,7 @@
   margin-bottom: 143px;
 }
 .prices__table-item {
-  font-family: 'Open Sans';
+  font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -136,21 +160,21 @@
   color: #283645;
 }
 .prices__table-item-column {
-  font-family: 'Open Sans';
+  font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: #283645;
 }
 .prices {
-  background-image: url(../img/prices-grey-background.png);
+  background-image: url("../img/prices-grey-background.png");
   margin-bottom: 96px;
   background-repeat: no-repeat;
 }
 .contacts__title {
-  font-family: "Open Sans";
+  font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 24px;
@@ -158,7 +182,7 @@
   color: #283645;
 }
 .contacts__heading {
-  font-family: "Open Sans";
+  font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -166,12 +190,18 @@
   color: #283645;
 }
 .contacts__description {
-  font-family: "Open Sans";
+  font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 24px;
   line-height: 33px;
   color: #d22856;
+}
+.contacts__description--mail:hover {
+  color: #283645;
+}
+.contacts__description--mail:active {
+  color: rgba(40, 54, 69, 0.3);
 }
 .contacts {
   margin-bottom: 40px;
@@ -181,8 +211,50 @@
   margin: 0;
   padding: 0;
 }
+.main-footer__logo {
+  fill: #283645;
+}
+.main-footer__logo:hover {
+  fill: #d22856;
+}
+.main-footer__logo:active {
+  fill: #283645;
+  opacity: 0.3;
+}
+.social__link-border-styles {
+  fill: rgba(40, 54, 69, 0.1);
+}
+.social__link-icon-styles {
+  fill: #d22856;
+}
+.social__link-logo:hover .social__link-border-styles {
+  fill: #283645;
+}
+.social__link-logo:active .social__link-border-styles {
+  fill: rgba(40, 54, 69, 0.1);
+}
+.social__link-logo:active .social__link-icon-styles {
+  opacity: 0.3;
+}
+.copyright__text {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #283645;
+}
+.copyright__logo {
+  fill: #d22856;
+}
+.copyright__logo:hover {
+  fill: #283645;
+}
+.copyright__logo:active {
+  fill: rgba(40, 54, 69, 0.3);
+}
 .catalog-heading {
-  font-family: 'Open Sans';
+  font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -190,7 +262,7 @@
   color: #283645;
 }
 .catalog-item__comment-author {
-  font-family: 'Open Sans';
+  font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -198,7 +270,7 @@
   color: #283645;
 }
 .catalog-item__comment-time {
-  font-family: 'Open Sans';
+  font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 12px;
@@ -207,7 +279,7 @@
   color: #283645;
 }
 .catalog__item__comment {
-  font-family: 'Open Sans';
+  font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -215,13 +287,13 @@
   color: #283645;
 }
 .catalog__item-like-text {
-  font-family: 'Open Sans';
+  font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 24px;
   text-transform: uppercase;
-  color: #D22856;
+  color: #d22856;
 }
 .catalog-item__comment-container {
   background-color: #f2f2f2;
@@ -243,8 +315,40 @@
 .catalog-uploader__container {
   background-color: #f2f2f2;
 }
+.uploader-button {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  color: #d22856;
+  outline: 3px solid #d22856;
+  border-radius: 30px;
+  border: none;
+}
+.uploader-button:hover {
+  background-color: #d22856;
+  color: #ffffff;
+}
+.uploader-button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+.uploader-button--cancel {
+  color: rgba(40, 54, 69, 0.1);
+  outline: 3px solid rgba(40, 54, 69, 0.1);
+}
+.uploader-button--cancel:hover {
+  color: rgba(40, 54, 69, 0.3);
+  outline: 3px solid rgba(40, 54, 69, 0.3);
+  background-color: #ffffff;
+}
+.uploader-button--cancel:active {
+  color: rgba(255, 255, 255, 0.3);
+  outline: 3px solid rgba(40, 54, 69, 0.3);
+  background-color: rgba(40, 54, 69, 0.3);
+}
 .competition-heading {
-  font-family: 'Open Sans';
+  font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -254,15 +358,15 @@
   padding: 0;
 }
 .competition-form-labels {
-  font-family: 'Open Sans';
+  font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
-  color: #D22856;
+  color: #d22856;
 }
 .checkbox-labels {
-  font-family: 'Open Sans';
+  font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -280,40 +384,59 @@
   padding: 0;
 }
 .competition-form__group-legend {
-  font-family: 'Open Sans';
+  font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
-  color: #D22856;
+  color: #d22856;
   padding: 0;
   margin: 0;
 }
 .competition-form__group--achievements,
 .competition-form__group--os {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 .button-submit {
-  background-color: #2AAB6D;
+  background-color: #2aab6d;
   border-radius: 1px;
   border: none;
-  font-family: 'Open Sans';
+  font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
+}
+.button-submit:hover {
+  background-color: #1c9b5e;
+}
+.button-submit:active {
+  background-color: #1c9b5e;
+  color: rgba(255, 255, 255, 0.3);
+}
+.button-submit:disabled {
+  background-color: #e5e5e5;
 }
 .competition-form-item__field {
-  font-family: 'Open Sans';
+  font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
   color: #283645;
-  border: 2px solid #E5E5E5;
+  border: none;
+  outline: 2px solid #e5e5e5;
+  border-radius: 1px;
+}
+.competition-form-item__field:hover {
+  outline: 2px solid #283645;
+  border-radius: 1px;
+}
+.competition-form-item__field:active {
+  outline: 2px solid #d22856;
   border-radius: 1px;
 }
 /*# sourceMappingURL=style.css.map */
