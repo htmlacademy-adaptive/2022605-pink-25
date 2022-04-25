@@ -1,46 +1,21 @@
-.catalog-heading {
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 30px;
-  color: #283645;
-}
-
 .catalog-item__comment-author {
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-style: normal;
   font-weight: 700;
-  font-size: 14px;
-  line-height: 24px;
   color: #283645;
 }
 
 .catalog-item__comment-time {
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-style: normal;
   font-weight: 300;
   font-size: 12px;
-  line-height: 24px;
   text-transform: uppercase;
   color: #283645;
 }
 
-.catalog__item__comment {
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
+.catalog-item__comment-container-likes__text {
   color: #283645;
 }
 
 .catalog__item-like-text {
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
   font-size: 12px;
-  line-height: 24px;
   text-transform: uppercase;
   color: #d22856;
 }
@@ -61,4 +36,37 @@
 
 .catalog-heading-container {
   margin-bottom: 52px;
+}
+
+.catalog-item__comment-container-likes {
+  display: flex;
+  flex-direction: row;
+}
+
+@media (min-width: @tablet-width) {
+  .catalog-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .photo-of-day {
+    flex-grow: 1;
+    max-width: 660px;
+  }
+
+  .catalog-item__comment-container-likes__link {
+    order: 2;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .catalog-list {
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-row: 506px 555px;
+  }
+
+  .photo-of-day {
+    grid-column: 1 / -1;
+  }
 }

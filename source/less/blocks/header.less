@@ -1,16 +1,18 @@
 .main-header {
   background-image: url("../img/backgrund-banner-clear.jpg");
   background-repeat: no-repeat;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: #1d2631;
   margin-bottom: 54px;
+}
+
+.main-header--index {
+  background-image: url("../img/banner-background-image.jpg");
 }
 
 .site-list {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 32px;
@@ -31,64 +33,48 @@
   }
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
 .main-banner__heading {
-  margin: 0;
+  margin: 0 0 348px 0;
   padding: 5px;
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-style: normal;
   font-weight: 300;
   font-size: 24px;
-  line-height: 120%;
+  line-height: 29px;
   color: #ffffff;
 }
 
 .main-heading {
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-style: normal;
   font-weight: 300;
   font-size: 24px;
-  line-height: 120%;
+  line-height: 33px;
   color: #ffffff;
   margin: 0;
 }
 
 .os-logotypes-list {
+  display: flex;
+  justify-content: space-around;
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
+.main-banner__os-logos-list {
+  margin-top: 32px;
+}
+
 .main-banner__description {
   margin: 0;
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-style: normal;
   font-weight: 300;
-  font-size: 14px;
-  line-height: 24px;
   color: #ffffff;
 }
 
 .main-banner__download-link {
   text-decoration: none;
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 18px;
   color: #ffffff;
   border: 3px solid #ffffff;
-  box-sizing: border-box;
   border-radius: 29px;
   padding: 21px 38px;
 
@@ -112,5 +98,37 @@
 
   &:active {
     fill: rgba(255, 255, 255, 0.3);
+  }
+}
+
+
+@media (min-width: @tablet-width) {
+  .main-banner {
+    max-width: 300px;
+  }
+
+  .main-banner__heading {
+    margin-bottom: 39px;
+  }
+
+  .reviews__author-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .reviews__author-name {
+    order: 2;
+  }
+
+  .main-footer__wrapper {
+    display: flex;
+  }
+
+  .social-list {
+    display: flex;
+  }
+
+  .copyright {
+    display: flex;
   }
 }
