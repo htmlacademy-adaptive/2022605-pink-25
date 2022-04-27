@@ -3,12 +3,13 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Приложение "Пинк"</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
-  <header class="main-header">
+  <header class="main-header main-header--index">
     <a class="main-header__logo">
       <svg class="main-header__logo-image" width="74" height="23" viewBox="0 0 74 23" fill="none"
         xmlns="http://www.w3.org/2000/svg">
@@ -54,16 +55,17 @@
             иначе!</h2>
         </header>
         <a class="main-banner__download-link" href="#" download>Скачать приложение</a>
-        <ul class="main-banner__os-logos-list os-logotypes-list">
-          <li class="os-logotypes__item">
-            <img class="os-logotypes__apple" src="./img/apple-logo.svg" width="47" height="56" alt="Логотип Apple">
+        <ul class="main-banner__os-logotypes-list os-logotypes-list">
+          <li class="main-banner__os-logotypes-item">
+            <img class="main-banner__os-logotypes-item__apple" src="./img/apple-logo.svg" width="47" height="56"
+              alt="Логотип Apple">
           </li>
-          <li class="os-logotypes__item">
-            <img class="os-logotypes__android" src="./img/android-logo.svg" width="43" height="47"
+          <li class="main-banner__os-logotypes-item">
+            <img class="main-banner__os-logotypes-item__android" src="./img/android-logo.svg" width="43" height="47"
               alt="Логотип Android">
           </li>
-          <li class="os-logotypes__item">
-            <img class="os-logotypes__microsoft" src="./img/microsoft-logo.svg" width="44" height="41"
+          <li class="main-banner__os-logotypes-item">
+            <img class="main-banner__os-logotypes-item__microsoft" src="./img/microsoft-logo.svg" width="44" height="41"
               alt="Логотип Microsoft">
           </li>
         </ul>
@@ -76,23 +78,23 @@
     <h1 class="visually-hidden">Сайт приложения Пинк</h1>
 
     <section class="main-advantages">
+      <h2 class="main-advantages__heading">Устали от серости мегаполиса?<br>Нам есть, что вам предложить!</h2>
       <div class="main-advantages__container">
-        <h2 class="main-advantages__heading">Устали от серости мегаполиса?<br>Нам есть, что вам предложить!</h2>
         <ul class="main-advantages__list advantages-list">
-          <li class="advantages-list__item">
-            <span class="advantages-item__heading">Поднимает настроение</span>
-            <p class="advantages-item__description">Приложение позволит вам победить осеннюю хандру и депрессию
-              буквально в несколько кликов!</p>
+          <li class="main-advantages__list__item">
+            <span class="main-advantages__list__item__heading">Поднимает настроение</span>
+            <p class="main-advantages__list__item__description">Приложение позволит вам победить осеннюю хандру и
+              депрессию буквально в несколько кликов!</p>
           </li>
-          <li class="advantages-list__item">
-            <span class="advantages-item__heading">Меняет мир вокруг</span>
-            <p class="advantages-item__description">Сделайте снимок и украсьте его смайликом или текстовой подписью,
-              чтобы усилить эффект</p>
+          <li class="main-advantages__list__item">
+            <span class="main-advantages__list__item__heading">Меняет мир вокруг</span>
+            <p class="main-advantages__list__item__description">Сделайте снимок и украсьте его смайликом или текстовой
+              подписью, чтобы усилить эффект</p>
           </li>
-          <li class="advantages-list__item">
-            <span class="advantages-item__heading">Заводит новых друзей</span>
-            <p class="advantages-item__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и
-              заводите новых</p>
+          <li class="main-advantages__list__item">
+            <span class="main-advantages__list__item__heading">Заводит новых друзей</span>
+            <p class="main-advantages__list__item__description">Ставьте лайки, комментируйте, делитесь фотографиями с
+              друзьями и заводите новых</p>
           </li>
         </ul>
         <div class="main-advantages__picture-container">
@@ -151,7 +153,7 @@
             <td class="prices__table-item"></td>
           </tr>
         </table>
-        <p class="reviews__toggles slider__toggles">
+        <p class="prices__wrapper-toggle slider__toggles">
           <button class="slider__toggle" type="button">1</button>
           <button class="slider__toggle slider__toggle--current" type="button">2</button>
           <button class="slider__toggle" type="button">3</button>
@@ -160,8 +162,8 @@
     </section>
 
     <section class="contacts">
+      <h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
       <div class="contacts__wrapper">
-        <h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
         <div class="contacts__item">
           <b class="contacts__heading">Звоните:</b>
           <a class="contacts__description" href="tel:+78125556666">+7 (812) 555-66-66</a>
@@ -205,6 +207,7 @@
             fill="#D22856" />
         </svg>
       </div>
+
       <div class="main-footer__social social">
         <ul class="social-list">
           <li class="social__item">

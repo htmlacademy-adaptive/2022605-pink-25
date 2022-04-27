@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Приложение "Пинк"</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -59,7 +60,7 @@
   <main class="main-container">
     <section class="competition-container">
       <div class="competition-heading-container">
-        <h2 class="competition-heading">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на
+        <h2 class="inner-page-heading">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на
           вашу бонусную карту!</h2>
       </div>
 
@@ -90,7 +91,7 @@
 
           <fieldset class="competition-form__group competition-form__group--achievements">
             <legend class="competition-form__group-legend">Ваши безбашенные достижения в путешествии</legend>
-            <ul class="competition-form-list">
+            <ul class="competition-form-list competition-form-list--achievements">
               <li class="competition-form-item">
                 <label class="competition-form-labels" for="achievements-selfie-with-shark">
                   <input class="competition-form-item__checkbox" type="checkbox" name="selfie-with-shark"
@@ -141,9 +142,9 @@
             </ul>
           </fieldset>
 
-          <fieldset class="competition-form__group competition-form__group--personal">
+          <fieldset class="competition-form__group competition-form__group-phone-mail">
             <legend class="visually-hidden">Номер телефона и почта</legend>
-            <ul class="competition-form-list">
+            <ul class="competition-form-list competition-form-list--phone-mail">
               <li class="competition-form-item">
                 <label class="competition-form-labels" for="personal-phone-number">Номер телефона</label>
                 <input class="competition-form-item__field" type="tel" name="phone-number" id="personal-phone-number"
@@ -187,10 +188,10 @@
             </ul>
           </fieldset>
 
-          <fieldset class="competition-form__group competition-form__group--comment ">
+          <fieldset class="competition-form__group competition-form__group--comment">
             <legend class="competition-form__group-legend">Опишите свои эмоции</legend>
             <label class="competition-form-labels" for="comments"></label>
-            <input class="competition-form-item__field" type="text" name="comment" id="comments"
+            <input class="competition-form__group-comment-field" type="text" name="comment" id="comments"
               placeholder="Можно прям в красках, не стесняясь в выражениях">
             </li>
           </fieldset>

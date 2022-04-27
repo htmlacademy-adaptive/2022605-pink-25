@@ -1,15 +1,11 @@
 .contacts__title {
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-style: normal;
   font-weight: 300;
   font-size: 24px;
-  line-height: 120%;
+  line-height: 29px;
   color: #283645;
 }
 
 .contacts__heading {
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 25px;
@@ -17,12 +13,11 @@
 }
 
 .contacts__description {
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-style: normal;
   font-weight: 300;
   font-size: 24px;
   line-height: 33px;
   color: #d22856;
+  margin: 0;
 }
 
 .contacts__description--mail {
@@ -37,4 +32,23 @@
 
 .contacts {
   margin-bottom: 40px;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 620px;
+  }
+
+  .contacts__item {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts__wrapper {
+    width: 865px;
+  }
 }

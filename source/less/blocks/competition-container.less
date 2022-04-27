@@ -1,27 +1,8 @@
-.competition-heading {
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 30px;
-  color: #283645;
-  margin: 0;
-  padding: 0;
-}
-
 .competition-form-labels {
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 30px;
   color: #d22856;
 }
 
 .checkbox-labels {
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
   font-size: 18px;
   line-height: 30px;
   color: #283645;
@@ -40,10 +21,6 @@
 }
 
 .competition-form__group-legend {
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
   color: #d22856;
@@ -82,9 +59,17 @@
   }
 }
 
-.competition-form-item__field {
+.competition-form__description {
+  color: #d22856;
+}
+
+.competition-form-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.competition-form__group-comment-field {
   font-family: "Open Sans", "Arial", sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
@@ -101,5 +86,66 @@
   &:active {
     outline: 2px solid #d22856;
     border-radius: 1px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .competition-form-item {
+    flex-direction: row;
+  }
+
+  .competition-form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .competition-form__group--os {
+    order: -1;
+  }
+
+  .competition-form__group--personal {
+    order: -2;
+  }
+
+  .competition-form__group--achievements {
+    order: 1;
+  }
+
+  .competition-form__group--comment {
+    order: 2;
+  }
+
+  .competition-form__submit-button-container {
+    display: flex;
+    order: 3;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .competition-form {
+    display: grid;
+    grid-template-columns: 470px 470px;
+    grid-template-rows: 435px 160px 230px 215px 60px;
+  }
+
+  .competition-form__group-phone-mail {
+    grid-column: 1 / -1;
+    grid-row: 2 / -4;
+  }
+
+  .competition-form-list--phone-mail {
+    display: flex;
+  }
+
+  .competition-form__group--achievements {
+    grid-column: 1 / -1;
+  }
+
+  .competition-form__group--comment {
+    grid-column: 1 / -1;
+  }
+
+  .competition-form__submit-button-container {
+    grid-column: 1 / -1;
   }
 }
