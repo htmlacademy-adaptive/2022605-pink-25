@@ -23,26 +23,26 @@
           d="M55.9384 1.38904C55.9228 1.21262 55.944 1.03487 56.0005 0.867114C56.0571 0.699353 56.1479 0.545245 56.267 0.414596C56.3862 0.283947 56.5311 0.179616 56.6926 0.108238C56.8541 0.0368607 57.0286 0 57.2051 0C57.3815 0 57.5561 0.0368607 57.7176 0.108238C57.8791 0.179616 58.024 0.283947 58.1431 0.414596C58.2623 0.545245 58.353 0.699353 58.4096 0.867114C58.4662 1.03487 58.4874 1.21262 58.4718 1.38904V13.6837L71.2282 0.551443C71.4899 0.279712 71.8455 0.119105 72.2216 0.10273C72.5468 0.115453 72.8548 0.252812 73.0821 0.486531C73.3094 0.72025 73.4388 1.03254 73.4436 1.35912C73.4366 1.52896 73.3961 1.69572 73.3245 1.84975C73.2529 2.00379 73.1516 2.14205 73.0264 2.25655L65.0785 10.1539L73.6523 20.6836C73.8764 20.9441 73.9998 21.2768 74 21.6209C73.9961 21.7933 73.9583 21.9633 73.8887 22.121C73.8191 22.2786 73.719 22.4209 73.5943 22.5395C73.4696 22.6582 73.3228 22.7509 73.1622 22.8123C73.0016 22.8737 72.8305 22.9026 72.6588 22.8973C72.4588 22.8891 72.2639 22.8322 72.0908 22.7314C71.9177 22.6306 71.7716 22.4891 71.6653 22.3189L63.3001 11.859L58.4718 16.7051V21.591C58.4718 21.7573 58.4391 21.922 58.3757 22.0756C58.3123 22.2293 58.2194 22.3689 58.1022 22.4865C57.9851 22.6041 57.846 22.6973 57.6929 22.761C57.5398 22.8246 57.3757 22.8574 57.21 22.8574C57.0443 22.8574 56.8803 22.8246 56.7272 22.761C56.5741 22.6973 56.435 22.6041 56.3179 22.4865C56.2007 22.3689 56.1078 22.2293 56.0443 22.0756C55.9809 21.922 55.9483 21.7573 55.9483 21.591V1.38904H55.9384Z" />
       </svg>
     </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item site-list__item--active">
-          <a class="site-list__item-link">
+    <nav class="main-header-nav">
+      <button class="main-header-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <ul class="main-header-nav-list">
+        <li class="main-header-nav__item main-header-nav__item--active">
+          <a class="main-header-nav__item-link">
             Главная
           </a>
         </li>
-        <li class="site-list__item">
-          <a class="site-list__item-link" href="catalog.html">
+        <li class="main-header-nav__item">
+          <a class="main-header-nav__item-link" href="catalog.html">
             Фотографии
           </a>
         </li>
-        <li class="site-list__item">
-          <a class="site-list__item-link" href="competition.html">
+        <li class="main-header-nav__item">
+          <a class="main-header-nav__item-link" href="competition.html">
             Конкурс
           </a>
         </li>
-        <li class="site-list__item">
-          <a class="site-list__item-link" href="https://htmlacademy.ru/" target="_blank">
+        <li class="main-header-nav__item">
+          <a class="main-header-nav__item-link" href="https://htmlacademy.ru/" target="_blank">
             HTML Academy
           </a>
         </li>
@@ -50,22 +50,21 @@
     </nav>
     <section class="main-banner">
       <div class="main-banner__container">
-        <header class="main-banner__header">
-          <h2 class="main-banner__heading">Взгляните на жизнь
-            иначе!</h2>
-        </header>
+        <div class="main-banner__heading-wrapper">
+          <p class="main-banner__heading">Взгляните на жизнь иначе!</p>
+        </div>
         <a class="main-banner__download-link" href="#" download>Скачать приложение</a>
-        <ul class="main-banner__os-logotypes-list os-logotypes-list">
+        <ul class="main-banner__os-logotypes-list">
           <li class="main-banner__os-logotypes-item">
-            <img class="main-banner__os-logotypes-item__apple" src="./img/apple-logo.svg" width="47" height="56"
+            <img class="main-banner__os-logotypes-item-apple" src="./img/apple-logo.svg" width="47" height="56"
               alt="Логотип Apple">
           </li>
           <li class="main-banner__os-logotypes-item">
-            <img class="main-banner__os-logotypes-item__android" src="./img/android-logo.svg" width="43" height="47"
+            <img class="main-banner__os-logotypes-item-android" src="./img/android-logo.svg" width="43" height="47"
               alt="Логотип Android">
           </li>
           <li class="main-banner__os-logotypes-item">
-            <img class="main-banner__os-logotypes-item__microsoft" src="./img/microsoft-logo.svg" width="44" height="41"
+            <img class="main-banner__os-logotypes-item-microsoft" src="./img/microsoft-logo.svg" width="44" height="41"
               alt="Логотип Microsoft">
           </li>
         </ul>
@@ -80,20 +79,20 @@
     <section class="main-advantages">
       <h2 class="main-advantages__heading">Устали от серости мегаполиса?<br>Нам есть, что вам предложить!</h2>
       <div class="main-advantages__container">
-        <ul class="main-advantages__list advantages-list">
-          <li class="main-advantages__list__item">
-            <span class="main-advantages__list__item__heading">Поднимает настроение</span>
-            <p class="main-advantages__list__item__description">Приложение позволит вам победить осеннюю хандру и
+        <ul class="main-advantages__list">
+          <li class="main-advantages__item">
+            <span class="main-advantages__item-heading">Поднимает настроение</span>
+            <p class="main-advantages__item-description">Приложение позволит вам победить осеннюю хандру и
               депрессию буквально в несколько кликов!</p>
           </li>
-          <li class="main-advantages__list__item">
-            <span class="main-advantages__list__item__heading">Меняет мир вокруг</span>
-            <p class="main-advantages__list__item__description">Сделайте снимок и украсьте его смайликом или текстовой
+          <li class="main-advantages__item">
+            <span class="main-advantages__item-heading">Меняет мир вокруг</span>
+            <p class="main-advantages__item-description">Сделайте снимок и украсьте его смайликом или текстовой
               подписью, чтобы усилить эффект</p>
           </li>
-          <li class="main-advantages__list__item">
-            <span class="main-advantages__list__item__heading">Заводит новых друзей</span>
-            <p class="main-advantages__list__item__description">Ставьте лайки, комментируйте, делитесь фотографиями с
+          <li class="main-advantages__item">
+            <span class="main-advantages__item-heading">Заводит новых друзей</span>
+            <p class="main-advantages__item-description">Ставьте лайки, комментируйте, делитесь фотографиями с
               друзьями и заводите новых</p>
           </li>
         </ul>

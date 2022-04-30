@@ -1,0 +1,20 @@
+.catalog-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .catalog-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .catalog-list {
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-row: 506px 555px;
+  }
+}
