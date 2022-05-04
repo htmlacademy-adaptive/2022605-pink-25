@@ -2,7 +2,7 @@
   color: #d22856;
 }
 
-.checkbox-labels {
+.competition-form__checkbox-labels {
   font-size: 18px;
   line-height: 30px;
   color: #283645;
@@ -33,7 +33,7 @@
   background-color: #f2f2f2;
 }
 
-.button-submit {
+.competition-form__submit-button {
   background-color: #2aab6d;
   border-radius: 1px;
   border: none;
@@ -59,13 +59,13 @@
   }
 }
 
-.competition-form__description {
-  color: #d22856;
-}
-
-.competition-form-item {
+.competition-form__item {
   display: flex;
   flex-direction: column;
+}
+
+.competition-form__description {
+  color: #d22856;
 }
 
 .competition-form__group-comment-field {
@@ -90,7 +90,7 @@
 }
 
 @media (min-width: @tablet-width) {
-  .competition-form-item {
+  .competition-form__item {
     flex-direction: row;
   }
 
@@ -115,7 +115,7 @@
     order: 2;
   }
 
-  .competition-form__submit-button-container {
+  .competition-form__button-container {
     display: flex;
     order: 3;
   }
@@ -145,7 +145,7 @@
     grid-column: 1 / -1;
   }
 
-  .competition-form__submit-button-container {
+  .competition-form__button-container {
     grid-column: 1 / -1;
   }
 }

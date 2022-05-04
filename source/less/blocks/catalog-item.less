@@ -1,0 +1,47 @@
+.catalog-item__comment-author {
+  font-weight: 700;
+  color: #283645;
+}
+
+.catalog-item__comment-time {
+  font-weight: 300;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #283645;
+}
+
+.catalog-item__comment-text {
+  color: #283645;
+}
+
+.catalog-item__likes-text {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #d22856;
+}
+
+.catalog-item__comment-container {
+  background-color: #f2f2f2;
+}
+
+.catalog-item__comment-container-likes {
+  display: flex;
+  flex-direction: row;
+}
+
+@media (min-width: @tablet-width) {
+  .catalog-item--photo-of-day {
+    flex-grow: 1;
+    max-width: 660px;
+  }
+
+  .catalog-item__likes-link {
+    order: 2;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .catalog-item--photo-of-day {
+    grid-column: 1 / -1;
+  }
+}
