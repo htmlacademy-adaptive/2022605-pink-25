@@ -24,8 +24,28 @@ body {
   line-height: 24px;
 }
 
+.index-body-wrapper {
+  max-width: 320px;
+  min-width: 320px;
+  margin: 0 auto;
+}
+
 .inner-page-heading {
   font-weight: 400;
   line-height: 30px;
   color: #283645;
+}
+
+@media (min-width: @tablet-width) {
+  .index-body-wrapper {
+    max-width: 660px;
+    min-width: 660px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .index-body-wrapper {
+    max-width: 1200px;
+    min-width: 1200px;
+  }
 }
