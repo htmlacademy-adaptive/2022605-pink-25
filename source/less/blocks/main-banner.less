@@ -1,6 +1,19 @@
+.main-banner {
+  width: 320px;
+  margin: 0 auto 0 0;
+}
+
+.main-banner__heading-wrapper {
+  margin-bottom: 105px;
+
+  &--index {
+    margin-bottom: 348px;
+  }
+}
+
 .main-banner__heading {
-  margin: 0 0 348px 0;
-  padding: 5px;
+  padding: 20px 8px 0 8px;
+  text-align: center;
   font-weight: 300;
   font-size: 24px;
   line-height: 33px;
@@ -11,6 +24,8 @@
   margin: 0;
   font-weight: 300;
   color: #ffffff;
+  text-align: center;
+  padding: 0 20px 20px 20px;
 }
 
 .main-banner__download-link {
@@ -21,7 +36,11 @@
   color: #ffffff;
   border: 3px solid #ffffff;
   border-radius: 29px;
-  padding: 21px 38px;
+  padding: 14px 0;
+  width: 280px;
+  text-align: center;
+  align-self: center;
+  margin-bottom: 32px;
 
   &:hover {
     background-color: #ffffff;
@@ -34,20 +53,87 @@
   }
 }
 
+.main-banner__container {
+  display: flex;
+  flex-direction: column;
+}
+
 .main-banner__os-logotypes-list {
   display: flex;
-  justify-content: space-around;
-  margin: 32px 0 0 0;
+  width: 205px;
+  justify-content: space-between;
+  margin: 0 auto;
   padding: 0;
   list-style-type: none;
+  align-items: baseline;
+  margin-bottom: 28px;
 }
 
 @media (min-width: @tablet-width) {
   .main-banner {
-    max-width: 300px;
+    max-width: 350px;
   }
 
   .main-banner__heading {
     margin-bottom: 39px;
+    font-size: 40px;
+    line-height: 48px;
+    padding: 20px 27px 0 26px;
+
+    &--catalog {
+      padding: 20px 70px 0 70px;
+    }
+
+    &--competition {
+      padding: 20px 80px 0 80px;
+    }
+  }
+
+  .main-banner__heading-wrapper--index {
+    margin-bottom: 0;
+  }
+
+  .main-banner__download-link {
+    margin-bottom: 46px;
+    width: 300px;
+  }
+
+  .main-banner__description {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-banner__container {
+    width: 300px;
+    margin: 114px 0 0 200px;
+  }
+
+  .main-banner__heading {
+    margin-bottom: 51px;
+    font-size: 50px;
+    line-height: 68px;
+    padding: 74px 40px 0 40px;
+
+    &--catalog {
+      padding: 74px 300px 0 300px;
+    }
+
+    &--competition {
+      padding: 74px 80px 0 80px;
+    }
+  }
+
+  .main-banner__download-link {
+    font-size: 21px;
+    margin-bottom: 67px;
+  }
+
+  .main-banner__os-logotypes-list {
+    margin-bottom: 58px;
+  }
+
+  .main-banner__description {
+    padding: 0 0 20px 0;
   }
 }

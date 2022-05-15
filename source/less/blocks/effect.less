@@ -1,0 +1,58 @@
+.effect {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .effect {
+    display: flex;
+    width: 660px;
+    margin: 0 auto 109px auto;
+  }
+
+  .effect__text-container {
+    display: flex;
+    flex-direction: column;
+    width: 310px;
+    margin-left: 72px;
+    align-self: center;
+  }
+
+  .effect__title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .effect__link {
+    color: #d22856;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .effect__text-container {
+    width: 530px;
+  }
+
+  .effect__title {
+    line-height: 30px;
+  }
+
+  .effect__description {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .effect__link {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .effect {
+    width: 1200px;
+    margin: 0 auto 109px auto;
+  }
+
+  .effect__timer-container {
+    margin-left: 131px;
+  }
+}

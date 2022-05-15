@@ -9,10 +9,53 @@
   line-height: 30px;
   color: #ffffff;
   background-color: #283645;
+  text-align: center;
+  width: 152px;
 }
 
 .prices {
   background-image: url("../img/prices-grey-background.png");
   margin-bottom: 96px;
   background-repeat: no-repeat;
+}
+
+.prices__table-item-cost {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+  margin: 0;
+}
+
+.prices__wrapper {
+  padding-top: 127px;
+}
+
+.prices__table {
+  margin-bottom: 45px;
+}
+
+.prices__wrapper-toggle {
+  padding-bottom: 50px;
+}
+
+@media (min-width: @tablet-width) {
+  .prices {
+    width: 660px;
+    margin: 0 auto 45px auto;
+  }
+
+  .prices__table {
+    margin: 0 auto;
+  }
+
+  .prices__wrapper-toggle {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .prices {
+    width: 1200px;
+    margin: 0 auto 45px auto;
+  }
 }

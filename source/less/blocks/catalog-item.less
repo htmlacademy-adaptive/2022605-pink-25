@@ -1,9 +1,20 @@
+.catalog-item {
+  width: 280px;
+  margin: 0 auto 20px auto;
+}
+
+.catalog-item--photo-of-day {
+  width: 320px;
+}
+
 .catalog-item__comment-author {
   font-weight: 700;
   color: #283645;
 }
 
 .catalog-item__comment-time {
+  display: inline-block;
+  margin: 0;
   font-weight: 300;
   font-size: 12px;
   text-transform: uppercase;
@@ -12,6 +23,7 @@
 
 .catalog-item__comment-text {
   color: #283645;
+  margin: 0;
 }
 
 .catalog-item__likes-text {
@@ -22,6 +34,9 @@
 
 .catalog-item__comment-container {
   background-color: #f2f2f2;
+  width: 253px;
+  padding: 25px 10px 25px 17px;
+  margin: 0 auto;
 }
 
 .catalog-item__comment-container-likes {
@@ -29,19 +44,75 @@
   flex-direction: row;
 }
 
+.catalog-item__likes-link {
+  margin-right: 20px;
+  align-self: center;
+}
+
+.catalog-item__photo-container {
+  line-height: 0;
+}
+
 @media (min-width: @tablet-width) {
   .catalog-item--photo-of-day {
     flex-grow: 1;
-    max-width: 660px;
+    width: 660px;
+  }
+
+  .catalog-item--photo-of-day .catalog-item__comment-container {
+    width: 620px;
+    display: grid;
+    grid-template-columns: 310px 310px;
+    grid-template-rows: 28px 40px;
+  }
+
+  .catalog-item__comment-container-likes {
+    grid-column: 2 / -1;
+    grid-row: 1 / -2;
+  }
+
+  .catalog-item--photo-of-day .catalog-item__comment-container .catalog-item__comment-container-likes {
+    margin-left: 180px;
+
+    & p {
+      margin: 0 16px 0 0;
+    }
+
+    & a {
+      align-self: flex-start;
+    }
+  }
+
+  .catalog-item__comment-text {
+    grid-column: 1 / -1;
+  }
+
+  .catalog-item--photo-of-day .catalog-item__photo-container {
+    width: 660px;
   }
 
   .catalog-item__likes-link {
     order: 2;
+    margin: 0;
+    align-self: flex-end;
+  }
+
+  .catalog-item__likes-text {
+    margin: 27px 137px 0 0;
   }
 }
 
 @media (min-width: @desktop-width) {
   .catalog-item--photo-of-day {
     grid-column: 1 / -1;
+  }
+
+  .catalog-item--photo-of-day .catalog-item__comment-container {
+    width: 940px;
+    grid-template-columns: 450px 450px;
+  }
+
+  .catalog-item--photo-of-day .catalog-item__comment-container .catalog-item__comment-container-likes {
+    margin-left: 320px;
   }
 }

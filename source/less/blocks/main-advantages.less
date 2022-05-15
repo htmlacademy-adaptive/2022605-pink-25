@@ -1,9 +1,15 @@
 .main-advantages__heading {
-  margin: 0 0 123px 0;
+  margin: 0 0 45px 0;
+  text-align: center;
+  padding: 20px 20px 0 20px;
   font-weight: 300;
   font-size: 24px;
   line-height: 29px;
   color: #283645;
+
+  &--second {
+    margin-bottom: 123px;
+  }
 }
 
 .main-advantages__list {
@@ -13,9 +19,15 @@
 }
 
 .main-advantages {
-  margin-bottom: 50px;
   background-image: url("../img/grey-background.png");
   background-repeat: no-repeat;
+  background-position: 0 214px;
+  width: 320px;
+  margin: 0 auto 50px auto;
+}
+
+.main-advantages__item {
+  text-align: center;
 }
 
 .main-advantages__item-heading {
@@ -27,9 +39,19 @@
 .main-advantages__item-description {
   color: #283645;
   margin: 0;
+  padding: 5px 26px 0 26px;
+  margin-bottom: 43px;
+}
+
+.main-advantages__picture-container {
+  text-align: center;
 }
 
 @media (min-width: @tablet-width) {
+  .main-advantages {
+    width: 660px;
+  }
+
   .main-advantages__container {
     display: flex;
     width: 620px;
@@ -38,6 +60,31 @@
   .main-advantages__picture-container {
     order: -1;
   }
+
+  .main-advantages__heading {
+    font-size: 40px;
+    line-height: 54px;
+    margin: 0;
+
+    &--second {
+      padding: 0 50px 0 50px;
+      margin-bottom: 47px;
+    }
+  }
+
+  .main-advantages__item {
+    text-align: start;
+    padding-left: 42px;
+  }
+
+  .main-advantages__item-description {
+    padding-left: 0;
+  }
+
+  .main-advantages__item-heading {
+    display: inline-block;
+    padding: 0 19px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -45,8 +92,24 @@
     min-width: 1200px;
     display: grid;
     grid-template-columns: 300px 300px 300px;
-    grid-template-rows: 382px 193px;
+    grid-template-rows: 382px 218px;
     grid-column-gap: 20px;
+    justify-content: center;
+  }
+
+  .main-advantages {
+    margin-bottom: 76px;
+    width: 1200px;
+  }
+
+  .main-advantages__heading {
+    font-size: 50px;
+    line-height: 68px;
+
+    &--second {
+      padding: 0 236px 0 237px;
+      margin-bottom: 72px;
+    }
   }
 
   .main-advantages__list {
@@ -54,9 +117,29 @@
     flex-direction: row;
     grid-row: 2 / -2;
     grid-column: 1 / -1;
+    justify-content: space-around;
   }
 
   .main-advantages__picture-container {
     grid-column: 3 / -1;
+  }
+
+  .main-advantages__item {
+    text-align: center;
+    padding: 0;
+    width: 260px;
+  }
+
+  .main-advantages__item-heading {
+    font-size: 30px;
+    line-height: 30px;
+    width: 234px;
+  }
+
+  .main-advantages__item-description {
+    font-size: 18px;
+    line-height: 30px;
+    padding: 0 15px 0 15px;
+    margin: 35px 0 0 0;
   }
 }

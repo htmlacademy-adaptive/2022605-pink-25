@@ -1,3 +1,16 @@
 .catalog-container {
-  margin-bottom: 49px;
+  width: 320px;
+  margin: 0 auto 49px auto;
+}
+
+@media (min-width: @tablet-width) {
+  .catalog-container {
+    width: 660px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .catalog-container {
+    width: 1200px;
+  }
 }
