@@ -2,11 +2,13 @@
   background-image: url("../img/backgrund-banner-clear.jpg");
   background-repeat: no-repeat;
   background-color: #1d2631;
-  margin-bottom: 27px;
+  margin-bottom: 54px;
+  height: 237px;
 }
 
 .main-header--index {
   background-image: url("../img/banner-background-image.jpg");
+  height: fit-content;
 }
 
 .main-header__nav {
@@ -156,6 +158,14 @@
 }
 
 @media (min-width: @tablet-width) {
+  .main-header {
+    height: 440px;
+
+    &--index {
+      height: fit-content;
+    }
+  }
+
   .reviews__author-info {
     display: flex;
     flex-direction: column;
@@ -171,7 +181,7 @@
 
   .main-header__nav {
     width: 660px;
-    margin-bottom: 102px;
+    margin: 0 auto 102px auto;
   }
 
   .main-header__nav--opened {
@@ -185,7 +195,11 @@
 
 @media (min-width: @desktop-width) {
   .main-header {
-    min-height: 853px;
+    min-height: 394px;
+
+    &--index {
+      min-height: 853px;
+    }
   }
 
   .main-header__nav {

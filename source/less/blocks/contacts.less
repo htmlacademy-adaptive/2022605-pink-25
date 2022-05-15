@@ -33,17 +33,26 @@
 }
 
 .contacts {
-  margin-bottom: 40px;
   text-align: center;
+  width: 320px;
+  margin: 0 auto 40px auto;
 }
 
 .contacts__item {
   display: flex;
   flex-direction: column;
   margin-bottom: 31px;
+
+  & a {
+    text-decoration: none;
+  }
 }
 
 @media (min-width: @tablet-width) {
+  .contacts {
+    width: 660px;
+  }
+
   .contacts__wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -73,6 +82,10 @@
 }
 
 @media (min-width: @desktop-width) {
+  .contacts {
+    width: 1200px;
+  }
+
   .contacts__wrapper {
     width: 1200px;
   }
@@ -88,5 +101,9 @@
 
   .contacts__item--telephone {
     order: -1;
+  }
+
+  .contacts__title {
+    padding: 0 350px 0 350px;
   }
 }

@@ -24,28 +24,23 @@ body {
   line-height: 24px;
 }
 
-.index-body-wrapper {
-  max-width: 320px;
-  min-width: 320px;
-  margin: 0 auto;
-}
-
 .inner-page-heading {
   font-weight: 400;
+  font-size: 14px;
   line-height: 30px;
   color: #283645;
+  text-align: center;
+  padding: 0 20px 0 20px;
 }
 
 @media (min-width: @tablet-width) {
-  .index-body-wrapper {
-    max-width: 660px;
-    min-width: 660px;
+  .inner-page-heading {
+    font-size: 18px;
   }
 }
 
-@media (min-width: @tablet-width) {
-  .index-body-wrapper {
-    max-width: 1200px;
-    min-width: 1200px;
+@media (min-width: @desktop-width) {
+  .inner-page-heading {
+    padding: 0 211px 0 211px;
   }
 }
