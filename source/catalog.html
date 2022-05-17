@@ -63,7 +63,11 @@
           <ul class="catalog-list">
             <li class="catalog-item catalog-item--photo-of-day">
               <div class="catalog-item__photo-container">
-                <img class="catalog-item__photo" src="./img/panoram-of-the-day.jpg" alt="Панорама дня">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="./img/panoram-of-the-day-desktop.jpg, ./img/panoram-of-the-day-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="./img/panoram-of-the-day-tablet.jpg, ./img/panoram-of-the-day-tablet@2x.jpg 2x">
+                  <img class="catalog-item__photo" src="./img/panoram-of-the-day.jpg" srcset="./img/panoram-of-the-day@2x.jpg 2x" alt="Панорама дня">
+                </picture>
               </div>
               <div class="catalog-item__comment-container">
                 <div class="catalog-item__comment-container-author">
@@ -86,7 +90,11 @@
 
             <li class="catalog-item">
               <div class="catalog-item__photo-container">
-                <img class="catalog-item__photo" src="./img/photo-1.jpg" alt="Фотов Левона">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="./img/photo-1-desktop.jpg, ./img/photo-1-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="./img/photo-1-tablet.jpg, ./img/photo-1-tablet@2x.jpg 2x">
+                  <img class="catalog-item__photo" src="./img/photo-1.jpg" srcset="./img/photo-1@2x.jpg 2x" alt="Фото Левона">
+                </picture>
               </div>
               <div class="catalog-item__comment-container">
                 <span class="catalog-item__comment-author">Левон</span>
@@ -107,7 +115,11 @@
 
             <li class="catalog-item">
               <div class="catalog-item__photo-container">
-                <img class="catalog-item__photo" src="./img/photo-2.jpg" alt="Фото Антона">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="./img/photo-2-desktop.jpg, ./img/photo-2-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="./img/photo-2-tablet.jpg, ./img/photo-2-tablet@2x.jpg 2x">
+                  <img class="catalog-item__photo" src="./img/photo-2.jpg" srcset="./img/photo-2@2x.jpg 2x" alt="Фото Антона">
+                </picture>
               </div>
               <div class="catalog-item__comment-container">
                 <span class="catalog-item__comment-author">Антон</span>
@@ -128,7 +140,11 @@
 
             <li class="catalog-item">
               <div class="catalog-item__photo-container">
-                <img class="catalog-item__photo" src="./img/photo-3.jpg" alt="Фото Бориса">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="./img/photo-3-desktop.jpg, ./img/photo-3-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="./img/photo-3-tablet.jpg, ./img/photo-3-tablet@2x.jpg 2x">
+                  <img class="catalog-item__photo" src="./img/photo-3.jpg" srcset="./img/photo-3@2x.jpg 2x" alt="Фото Бориса">
+                </picture>
               </div>
               <div class="catalog-item__comment-container">
                 <span class="catalog-item__comment-author">Борис</span>
@@ -149,7 +165,11 @@
 
             <li class="catalog-item">
               <div class="catalog-item__photo-container">
-                <img class="catalog-item__photo" src="./img/photo-4.jpg" alt="Фото Сергея">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="./img/photo-4-desktop.jpg, ./img/photo-4-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="./img/photo-4-tablet.jpg, ./img/photo-4-tablet@2x.jpg 2x">
+                  <img class="catalog-item__photo" src="./img/photo-4.jpg" srcset="./img/photo-4@2x.jpg 2x" alt="Фото Сергея">
+                </picture>
               </div>
               <div class="catalog-item__comment-container">
                 <span class="catalog-item__comment-author">Сергей</span>
@@ -170,7 +190,11 @@
 
             <li class="catalog-item">
               <div class="catalog-item__photo-container">
-                <img class="catalog-item__photo" src="./img/photo-5.jpg" alt="Фото Максима">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="./img/photo-5-desktop.jpg, ./img/photo-5-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="./img/photo-5-tablet.jpg, ./img/photo-5-tablet@2x.jpg 2x">
+                  <img class="catalog-item__photo" src="./img/photo-5.jpg" srcset="./img/photo-5@2x.jpg 2x" alt="Фото Максима">
+                </picture>
               </div>
               <div class="catalog-item__comment-container">
                 <span class="catalog-item__comment-author">Максим</span>
@@ -191,7 +215,11 @@
 
             <li class="catalog-item">
               <div class="catalog-item__photo-container">
-                <img class="catalog-item__photo" src="./img/photo-6.jpg" alt="Фото Надежды">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="./img/photo-6-desktop.jpg, ./img/photo-6-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="./img/photo-6-tablet.jpg, ./img/photo-6-tablet@2x.jpg 2x">
+                  <img class="catalog-item__photo" src="./img/photo-6.jpg" srcset="./img/photo-6@2x.jpg 2x" alt="Фото Надежды">
+                </picture>
               </div>
               <div class="catalog-item__comment-container">
                 <span class="catalog-item__comment-author">Надежда</span>
@@ -224,7 +252,10 @@
             <fieldset class="catalog-uploader__group">
               <legend class="visually-hidden">Форма создания поста</legend>
               <div class="catalog-uploader__group-photo-container">
-                <img src="./img/catalog-uploader-photo.jpg" alt="Заснеженная дорога">
+                <picture>
+                  <source media="(min-width: 660px)" srcset="./img/catalog-uploader-photo-tablet.jpg, ./img/catalog-uploader-photo-tablet@2x.jpg 2x">
+                  <img class="catalog-item__photo" src="./img/catalog-uploader-photo.jpg" srcset="./img/catalog-uploader-photo@2x.jpg 2x" alt="Заснеженная дорога">
+                </picture>
               </div>
               <div class="catalog-uploader__filters">
                 <div class="catalog-uploader__filters-item">
