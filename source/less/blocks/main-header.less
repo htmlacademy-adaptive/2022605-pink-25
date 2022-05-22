@@ -4,6 +4,7 @@
   background-color: #1d2631;
   margin-bottom: 54px;
   height: 237px;
+  background-position: center;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/backgrund-banner-clear@2x.jpg");
@@ -14,6 +15,7 @@
 .main-header--index {
   background-image: url("../img/banner-background-image.jpg");
   height: fit-content;
+  background-position: top;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/banner-background-image@2x.jpg");
@@ -25,6 +27,8 @@
   background-color: rgba(0, 0, 0, 0.3);
   min-height: 66px;
   position: relative;
+  width: 320px;
+  margin: 0 auto;
 }
 
 .main-header__nav-toggle {
@@ -140,6 +144,11 @@
   &:active {
     fill: rgba(255, 255, 255, 0.3);
   }
+
+  &--tablet,
+  &--desktop {
+    display: none;
+  }
 }
 
 .main-header__logo {
@@ -190,7 +199,7 @@
 
   .main-header__nav {
     width: 660px;
-    margin: 0 auto 102px auto;
+    margin: 0 auto 70px auto;
   }
 
   .main-header__nav--opened {
@@ -199,6 +208,17 @@
 
   .main-header__nav--closed .main-header__nav-item {
     display: none;
+  }
+
+  .main-header__logo-image {
+    &--phone,
+    &--desktop {
+      display: none;
+    }
+
+    &--tablet {
+      display: block;
+    }
   }
 }
 
@@ -265,5 +285,16 @@
   .main-header__logo {
     margin-right: 173px;
     margin-left: 150px;
+  }
+
+  .main-header__logo-image {
+    &--phone,
+    &--tablet {
+      display: none;
+    }
+
+    &--desktop {
+      display: block;
+    }
   }
 }

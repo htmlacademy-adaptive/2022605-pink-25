@@ -1,9 +1,11 @@
 .main-banner {
   width: 320px;
-  margin: 0 auto 0 0;
+  margin: 0 auto 0;
 }
 
 .main-banner__heading-wrapper {
+  width: 320px;
+  margin: 0 auto;
   margin-bottom: 105px;
 
   &--index {
@@ -71,7 +73,12 @@
 
 @media (min-width: @tablet-width) {
   .main-banner {
-    max-width: 350px;
+    width: 660px;
+  }
+
+  .main-banner__container {
+    width: 300px;
+    margin-left: 20px;
   }
 
   .main-banner__heading {
@@ -89,8 +96,13 @@
     }
   }
 
+  .main-banner__heading-wrapper {
+    width: 660px;
+  }
+
   .main-banner__heading-wrapper--index {
     margin-bottom: 0;
+    width: 300px;
   }
 
   .main-banner__download-link {
@@ -104,9 +116,14 @@
 }
 
 @media (min-width: @desktop-width) {
+  .main-banner {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
   .main-banner__container {
     width: 300px;
-    margin: 114px 0 0 200px;
+    margin: 23px 0 0 200px;
   }
 
   .main-banner__heading {
@@ -121,6 +138,14 @@
 
     &--competition {
       padding: 74px 80px 0 80px;
+    }
+  }
+
+  .main-banner__heading-wrapper {
+    width: 1200px;
+
+    &--index {
+      width: 300px;
     }
   }
 
