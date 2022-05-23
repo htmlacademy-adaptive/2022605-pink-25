@@ -4,6 +4,9 @@ import less from 'gulp-less';
 import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
+import svgstore from 'gulp-svgstore';
+import svgo from 'gulp-svgmin';
+
 
 // Styles
 
