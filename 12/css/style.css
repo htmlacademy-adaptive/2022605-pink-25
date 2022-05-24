@@ -66,9 +66,11 @@ body {
   background-image: url("../img/backgrund-banner-clear.jpg");
   background-repeat: no-repeat;
   background-color: #1d2631;
+  margin: 0 auto;
   margin-bottom: 54px;
   height: 237px;
   background-position: center;
+  width: 320px;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .main-header {
@@ -216,6 +218,7 @@ body {
   .main-header {
     height: 440px;
     background-image: url("../img/backgrund-banner-clear-tablet.jpg");
+    width: 660px;
   }
   .main-header--index {
     height: -moz-fit-content;
@@ -256,6 +259,7 @@ body {
   .main-header {
     min-height: 394px;
     background-image: url("../img/backgrund-banner-clear-desktop.jpg");
+    width: 1200px;
   }
   .main-header--index {
     min-height: 853px;
