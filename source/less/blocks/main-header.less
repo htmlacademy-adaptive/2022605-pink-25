@@ -176,11 +176,16 @@
   .main-header__nav--nojs .main-header__nav-item {
     display: block;
   }
+
+  .main-header__nav-list {
+    position: absolute;
+    width: 320px;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .main-header {
-    height: 440px;
+    min-height: 440px;
     background-image: url("../img/backgrund-banner-clear-tablet.jpg");
     width: 660px;
 
@@ -190,7 +195,7 @@
     }
 
     &--index {
-      height: fit-content;
+      min-height: 729px;
       background-image: url("../img/banner-background-image-tablet.jpg");
 
       @media (min-resolution: 2dppx) {
@@ -223,13 +228,20 @@
       display: block;
     }
   }
+
+  .main-header__nav-list {
+    position: absolute;
+    width: 660px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .main-header {
     min-height: 394px;
     background-image: url("../img/backgrund-banner-clear-desktop.jpg");
-    width: 1200px;
+    width: 100%;
+    background-size: cover;
+    background-position-y: -43px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/backgrund-banner-clear-desktop@2x.jpg");
@@ -239,6 +251,7 @@
     &--index {
       min-height: 853px;
       background-image: url("../img/banner-background-image-desktop.jpg");
+      background-position-y: 0;
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/banner-background-image-desktop@2x.jpg");
@@ -263,6 +276,7 @@
     justify-content: flex-start;
     flex-wrap: wrap;
     width: 700px;
+    position: relative;
   }
 
   .main-header__nav-item-link {
