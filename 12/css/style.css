@@ -213,16 +213,19 @@ body {
   .main-header__nav--nojs .main-header__nav-item {
     display: block;
   }
+  .main-header__nav-list {
+    position: absolute;
+    width: 320px;
+  }
 }
 @media (min-width: 660px) {
   .main-header {
-    height: 440px;
+    min-height: 440px;
     background-image: url("../img/backgrund-banner-clear-tablet.jpg");
     width: 660px;
   }
   .main-header--index {
-    height: -moz-fit-content;
-    height: fit-content;
+    min-height: 729px;
     background-image: url("../img/banner-background-image-tablet.jpg");
   }
   .main-header__nav {
@@ -242,6 +245,10 @@ body {
   .main-header__logo-image--tablet {
     display: block;
   }
+  .main-header__nav-list {
+    position: absolute;
+    width: 660px;
+  }
 }
 @media (min-width: 660px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 660px) and (min-resolution: 2dppx) {
   .main-header {
@@ -259,11 +266,14 @@ body {
   .main-header {
     min-height: 394px;
     background-image: url("../img/backgrund-banner-clear-desktop.jpg");
-    width: 1200px;
+    width: 100%;
+    background-size: cover;
+    background-position-y: -43px;
   }
   .main-header--index {
     min-height: 853px;
     background-image: url("../img/banner-background-image-desktop.jpg");
+    background-position-y: 0;
   }
   .main-header__nav {
     width: 1200px;
@@ -279,6 +289,7 @@ body {
     justify-content: flex-start;
     flex-wrap: wrap;
     width: 700px;
+    position: relative;
   }
   .main-header__nav-item-link {
     font-size: 18px;
@@ -507,12 +518,16 @@ body {
 @media (min-width: 660px) {
   .main-advantages {
     width: 660px;
+    background-image: url("../img/grey-background-tablet.jpg");
+    background-position-y: 193px;
   }
   .main-advantages__container {
     display: flex;
     width: 620px;
+    margin: 0 auto;
   }
   .main-advantages__picture-container {
+    width: 100%;
     order: -1;
   }
   .main-advantages__heading {
@@ -697,6 +712,7 @@ body {
   .prices {
     width: 660px;
     margin: 0 auto 45px auto;
+    background-image: url("../img/grey-background-price-tablet.jpg");
   }
   .prices__table {
     margin: 0 auto;
@@ -759,6 +775,16 @@ body {
 @media (min-width: 660px) {
   .contacts {
     width: 660px;
+    position: relative;
+  }
+  .contacts::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 123px;
+    bottom: 0;
+    left: 0;
+    background-image: url("../img/triangle-white-footer-tablet.jpg");
   }
   .contacts__map {
     width: 100%;
@@ -1443,6 +1469,9 @@ body {
 }
 .effect {
   display: none;
+}
+.effect__timer-container {
+  margin-left: 20px;
 }
 @media (min-width: 660px) {
   .effect {
