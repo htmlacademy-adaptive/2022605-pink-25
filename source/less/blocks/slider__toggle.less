@@ -20,3 +20,35 @@
   margin: 0;
   padding-bottom: 60px;
 }
+
+.slider__toggle-left,
+.slider__toggle-right {
+  display: none;
+}
+
+@media (min-width: @desktop-width) {
+  .slider__toggle-left {
+    background-image: url("../img/slider-toggle-left.svg");
+    width: 22px;
+    height: 41px;
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    top: 30px;
+    display: block;
+    cursor: pointer;
+  }
+
+  .slider__toggle-right {
+    background-image: url("../img/slider-toggle-right.svg");
+    width: 22px;
+    height: 41px;
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    right: 0;
+    top: 30px;
+    display: block;
+    cursor: pointer;
+  }
+}

@@ -8,9 +8,20 @@
 
 @media (min-width: @tablet-width) {
   .effect {
-    display: flex;
-    width: 660px;
     margin: 0 auto 109px auto;
+    position: relative;
+    margin-top: -73px;
+    background-color: #ffffff;
+    width: 100%;
+    display: block;
+  }
+
+  .effect-wrapper {
+    width: 660px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    padding-top: 54px;
   }
 
   .effect__text-container {
@@ -52,11 +63,13 @@
   }
 
   .effect {
-    width: 1200px;
+    width: 100%;
     margin: 0 auto 109px auto;
+    background-color: #f2f2f2;
+    padding-bottom: 35px;
   }
 
-  .effect__timer-container {
-    margin-left: 131px;
+  .effect-wrapper {
+    width: 903px;
   }
 }
