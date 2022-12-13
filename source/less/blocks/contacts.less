@@ -20,6 +20,7 @@
   color: #d22856;
   margin: 0;
   padding: 0 40px;
+  z-index: 1;
 }
 
 .contacts__description--mail {
@@ -36,6 +37,17 @@
   text-align: center;
   width: 320px;
   margin: 0 auto;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 123px;
+    bottom: -63px;
+    left: 0;
+    background-image: url("../img/triangle-white-footer.png");
+  }
 }
 
 .contacts__item {
@@ -60,13 +72,9 @@
     position: relative;
 
     &::after {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 123px;
-      bottom: 0;
-      left: 0;
-      background-image: url("../img/triangle-white-footer-tablet.jpg");
+      background-image: url("../img/triangle-white-footer-tablet.png");
+      background-repeat: no-repeat;
+      bottom: -67px;
     }
   }
 
@@ -122,5 +130,10 @@
 
   .contacts__title {
     padding: 0 350px 0 350px;
+  }
+
+  .contacts::after {
+    background-image: url("../img/triangle-white-footer-desktop.png");
+    bottom: -102px;
   }
 }

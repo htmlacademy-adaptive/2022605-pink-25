@@ -222,36 +222,35 @@
       </div>
 
       <div class="catalog-post-container">
+        <div class="catalog-item--photo-of-day">
+          <div class="catalog-item__photo-container">
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="./img/panoram-of-the-day-desktop.jpg, ./img/panoram-of-the-day-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)"
+                srcset="./img/panoram-of-the-day-tablet.jpg, ./img/panoram-of-the-day-tablet@2x.jpg 2x">
+              <img class="catalog-item__photo" src="./img/panoram-of-the-day.jpg"
+                srcset="./img/panoram-of-the-day@2x.jpg 2x" alt="Панорама дня">
+            </picture>
+          </div>
+          <div class="catalog-item__comment-container">
+            <div class="catalog-item__comment-container-author">
+              <span class="catalog-item__comment-author">Анна</span>
+              <p class="catalog-item__comment-time">(5 минут назад)</p>
+            </div>
+            <p class="catalog-item__comment-text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую
+              трансляцию в перископе, задавайте свои вопросы!</p>
+            <div class="catalog-item__comment-container-likes">
+              <a class="catalog-item__likes-link" href="#">
+                <svg width="13" height="12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <use href="#catalog-item-like"></use>
+                </svg>
+              </a>
+              <p class="catalog-item__likes-text">Нравится: 215</p>
+            </div>
+          </div>
+        </div>
         <ul class="catalog-list">
-          <li class="catalog-item catalog-item--photo-of-day">
-            <div class="catalog-item__photo-container">
-              <picture>
-                <source media="(min-width: 1200px)"
-                  srcset="./img/panoram-of-the-day-desktop.jpg, ./img/panoram-of-the-day-desktop@2x.jpg 2x">
-                <source media="(min-width: 660px)"
-                  srcset="./img/panoram-of-the-day-tablet.jpg, ./img/panoram-of-the-day-tablet@2x.jpg 2x">
-                <img class="catalog-item__photo" src="./img/panoram-of-the-day.jpg"
-                  srcset="./img/panoram-of-the-day@2x.jpg 2x" alt="Панорама дня">
-              </picture>
-            </div>
-            <div class="catalog-item__comment-container">
-              <div class="catalog-item__comment-container-author">
-                <span class="catalog-item__comment-author">Анна</span>
-                <p class="catalog-item__comment-time">(5 минут назад)</p>
-              </div>
-              <p class="catalog-item__comment-text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую
-                трансляцию в перископе, задавайте свои вопросы!</p>
-              <div class="catalog-item__comment-container-likes">
-                <a class="catalog-item__likes-link" href="#">
-                  <svg width="13" height="12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <use href="#catalog-item-like"></use>
-                  </svg>
-                </a>
-                <p class="catalog-item__likes-text">Нравится: 215</p>
-              </div>
-            </div>
-          </li>
-
           <li class="catalog-item">
             <div class="catalog-item__photo-container">
               <picture>
@@ -424,19 +423,28 @@
             </div>
             <div class="catalog-uploader__filters">
               <div class="catalog-uploader__filters-item catalog-uploader__filters-item--active">
-                <svg width="44" height="44" xmlns="http://www.w3.org/2000/svg">
+                <svg class="catalog-uploader-filter-crop" width="44" height="44" xmlns="http://www.w3.org/2000/svg">
                   <use href="#catalog-uploader__filters-crop"></use>
                 </svg>
+                <div class="catalog-uploader-range-bar-crop">
+                  <button class="catalog-uploader-range-bar-toggle-crop" type="button"></button>
+                </div>
               </div>
               <div class="catalog-uploader__filters-item">
-                <svg width="48" height="43" xmlns="http://www.w3.org/2000/svg">
+                <svg class="catalog-uploader-filter-fill" width="48" height="43" xmlns="http://www.w3.org/2000/svg">
                   <use href="#catalog-uploader__filters-fill"></use>
                 </svg>
+                <div class="catalog-uploader-range-bar-fill">
+                  <button class="catalog-uploader-range-bar-toggle-fill" type="button"></button>
+                </div>
               </div>
               <div class="catalog-uploader__filters-item">
-                <svg width="32" height="32" xmlns="http://www.w3.org/2000/svg">
+                <svg class="catalog-uploader-filter-contrast" width="32" height="32" xmlns="http://www.w3.org/2000/svg">
                   <use href="#catalog-uploader__filters-contrast"></use>
                 </svg>
+                <div class="catalog-uploader-range-bar-contrast">
+                  <button class="catalog-uploader-range-bar-toggle-contrast" type="button"></button>
+                </div>
               </div>
             </div>
             <div class="catalog-uploader__buttons">
